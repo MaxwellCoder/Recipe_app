@@ -16,13 +16,13 @@ function RecipeCreate({addRecipe}) {
     })
   }
   // Submission Variable
-  const submit = (event) =>{
+  const submitHandler = (event) =>{
     event.preventDefault();
     addRecipe(formData)
     setFormData({...initialFormState})
   }
   return (
-    <form name="create" className="create" onSubmit={submit}>
+    <form name="create" className="create" onSubmit={submitHandler}>
       <table>
         <tbody>
           <tr >
